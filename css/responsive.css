@@ -1,0 +1,23 @@
+@media (max-width:500px) {
+        .burger-icon{
+            display: block;
+        }
+        .nav-ul, .img-profile{
+            display: none;
+        }
+} 
+@media (max-width:600px){
+    .main-box{
+        flex-direction: column;
+    }
+    .form-box{
+        margin-top: 5%;
+    }
+    .main-box-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
