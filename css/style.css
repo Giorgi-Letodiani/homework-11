@@ -1,7 +1,11 @@
 /* header */
 .header-box{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
 }
 .logo-text-box{
@@ -14,16 +18,26 @@
     color: #FA6980;
 }
 .nav-flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 400px;
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 2%;
 }
 .nav-ul, .img-profile, .logo-text-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .nav-a{
     font-family: Helvetica;
@@ -65,6 +79,8 @@
     margin: 0 auto;
     padding-top: 5%;
     padding-bottom: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .bg-box{
@@ -82,11 +98,22 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 h1{
     max-width: 360px;
@@ -118,22 +145,41 @@ h2{
 .form-box{
     max-width: 580px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .main-form{
     max-width: 360px;
     height: 250px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 form{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 label{
     font-family: Acumin Pro;
@@ -149,6 +195,30 @@ input{
     margin-top: 3%;
     border-color: #EBEDED;
     border-radius: 5px;
+}
+input::-webkit-input-placeholder{
+    padding: 15px;
+    font-family: Helvetica;
+    font-size: 13px;
+    color: #A6ADB4;
+}
+input::-moz-placeholder{
+    padding: 15px;
+    font-family: Helvetica;
+    font-size: 13px;
+    color: #A6ADB4;
+}
+input:-ms-input-placeholder{
+    padding: 15px;
+    font-family: Helvetica;
+    font-size: 13px;
+    color: #A6ADB4;
+}
+input::-ms-input-placeholder{
+    padding: 15px;
+    font-family: Helvetica;
+    font-size: 13px;
+    color: #A6ADB4;
 }
 input::placeholder{
     padding: 15px;
@@ -176,15 +246,24 @@ button{
     margin: 0 auto;
     padding-top: 5%;
     padding-bottom: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .block-1{
     max-width: 360px;
     width: 100%;
     height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .avatar-text{
     max-width: 360px;
@@ -207,10 +286,14 @@ button{
 }
 .time-box{
     margin-top: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 80px;
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .time-text{
     font-family: Helvetica;
@@ -226,23 +309,41 @@ footer{
     width: 100%;
     height: 200px;
     background-color: #A6ADB4;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .ft-block-1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 380px;
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     
 }
 .column-block{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 80px;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 .nav-ft-main-text{
     font-family: Acumin Pro;
@@ -258,9 +359,16 @@ footer{
     max-width: 262px;
     width: 100%;
     height: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 .ft-input{
     max-width: 262px;
@@ -278,6 +386,22 @@ footer{
     font-family: Helvetica;
     color: #CBD0D3;
 }
+.ft-input::-webkit-input-placeholder{
+    background-color: #A6ADB4;
+    color: #CBD0D3;
+}
+.ft-input::-moz-placeholder{
+    background-color: #A6ADB4;
+    color: #CBD0D3;
+}
+.ft-input:-ms-input-placeholder{
+    background-color: #A6ADB4;
+    color: #CBD0D3;
+}
+.ft-input::-ms-input-placeholder{
+    background-color: #A6ADB4;
+    color: #CBD0D3;
+}
 .ft-input::placeholder{
     background-color: #A6ADB4;
     color: #CBD0D3;
@@ -285,8 +409,12 @@ footer{
 .ft-social-icons-block{
     max-width: 160px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .s-icon{
     color: #FFFFFF;
